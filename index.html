@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="description" content="Happy Birthday Baby — a love letter for Beepana from Evan">
+    <meta name="theme-color" content="#1a0a1f">
+    <title>Happy Birthday Baby ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="preloader" class="preloader">
+        <div class="preloader-heart">
+            <div class="heart-pulse"></div>
+            <p class="preloader-text">Loading a little piece of my heart...</p>
+        </div>
+    </div>
+
+    <div id="hearts-container" class="hearts-container" aria-hidden="true"></div>
+    <canvas id="particles-canvas" class="particles-canvas"></canvas>
+    <div id="floating-messages" class="floating-messages" aria-hidden="true"></div>
+
+    <nav class="main-nav" id="main-nav">
+        <div class="nav-logo">For Beepana ❤️</div>
+        <ul class="nav-links">
+            <li><a href="#hero" class="nav-link">Home</a></li>
+            <li><a href="#letter" class="nav-link">My Letter</a></li>
+            <li><a href="#reasons" class="nav-link">Why I Love You</a></li>
+            <li><a href="#gallery" class="nav-link">Memories</a></li>
+            <li><a href="#games" class="nav-link">Play With Me</a></li>
+            <li><a href="#quiz" class="nav-link">Love Quiz</a></li>
+            <li><a href="#timeline" class="nav-link">Our Story</a></li>
+            <li><a href="#promises" class="nav-link">Promises</a></li>
+            <li><a href="#finale" class="nav-link">Forever</a></li>
+        </ul>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- HERO -->
+    <header id="hero" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-eyebrow animate-fade-up">To my Dumbo</p>
+            <h1 class="hero-title">
+                <span class="title-line">Happy Birthday,</span>
+                <span class="title-line highlight">Baby</span>
+            </h1>
+            <p class="hero-subtitle animate-fade-up delay-1">
+                you're my everything
+            </p>
+            <div class="hero-cta animate-fade-up delay-2">
+                <a href="#letter" class="btn-primary">Read My Heart</a>
+                <button class="btn-secondary" id="play-music-btn">Play Our Song 🎵</button>
+                <a href="#games" class="btn-secondary">Play Mini Games 🎮</a>
+            </div>
+            <div class="love-counter animate-fade-up delay-3">
+                <span class="counter-label">Days I get to love you</span>
+                <span class="counter-value" id="love-days">—</span>
+            </div>
+            <div class="hero-image-placeholder">
+                <img src="photos/07-dreamed-of.jpg" alt="Beepana" style="width:100%;max-width:420px;border-radius:16px;margin:0 auto;display:block;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                <div class="placeholder-box" style="display:none;">
+                    <span class="placeholder-icon">📷</span>
+                    <p>Hero photo (photos/07-dreamed-of.jpg)</p>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to feel more love</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </header>
+
+    <!-- LETTER -->
+    <section id="letter" class="letter-section section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">A Letter From My Soul</h2>
+                <p class="section-subtitle">Written for Beepana, my Dumbo</p>
+            </div>
+            <div class="letter-paper">
+                <div class="letter-header">
+                    <p class="letter-date">On your special day</p>
+                    <p class="letter-to">My dearest Baby,</p>
+                </div>
+                <div class="letter-body">
+                    <!-- ========== PASTE YOUR LETTER HERE ========== -->
+                    <p>
+                        [Write your letter here, Evan.]
+                    </p>
+                    <p>
+                        [Add as many paragraphs as you want. This is your space.]
+                    </p>
+                    <p>
+                        [Tell her everything you feel.]
+                    </p>
+                    <!-- ========== END OF LETTER SPACE ========== -->
+
+                    <p class="letter-closing">
+                        Happy Birthday, Baby.<br>
+                        Here’s to us — to every bunked class, every early morning, every quiet moment.
+                    </p>
+                    <p class="letter-signature">
+                        Yours,<br>
+                        <span class="signature-name">Evan</span>
+                    </p>
+                </div>
+                <div class="letter-image-placeholder">
+                    <div class="placeholder-box small">
+                        <span>🖼️</span>
+                        <p>A special photo of you two</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REASONS (short points only) -->
+    <section id="reasons" class="reasons-section section">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Why I Love You</h2>
+                <p class="section-subtitle">Just a few of the many reasons</p>
+            </div>
+            <div class="reasons-grid" id="reasons-grid">
+                <div class="reason-card"><div class="reason-number">01</div><h3>Your smile</h3></div>
+                <div class="reason-card"><div class="reason-number">02</div><h3>Your laugh</h3></div>
+                <div class="reason-card"><div class="reason-number">03</div><h3>How safe I feel with you</h3></div>
+                <div class="reason-card"><div class="reason-number">04</div><h3>Your kindness</h3></div>
+                <div class="reason-card"><div class="reason-number">05</div><h3>The way you say my name</h3></div>
+                <div class="reason-card"><div class="reason-number">06</div><h3>Your quiet strength</h3></div>
+                <div class="reason-card"><div class="reason-number">07</div><h3>Late-night talks</h3></div>
+                <div class="reason-card"><div class="reason-number">08</div><h3>How you care</h3></div>
+                <div class="reason-card"><div class="reason-number">09</div><h3>You chose me</h3></div>
+                <div class="reason-card"><div class="reason-number">10</div><h3>Simply being you</h3></div>
+                <div class="reason-card"><div class="reason-number">11</div><h3>Your Dumbo moments</h3></div>
+                <div class="reason-card"><div class="reason-number">12</div><h3>How you make ordinary days special</h3></div>
+            </div>
+            <p class="reasons-footer">And a million more that live only between us...</p>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="gallery-section section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Pieces of Us</h2>
+                <p class="section-subtitle">Memories that live in my heart</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item large">
+                    <div class="gallery-placeholder">
+                        <img src="photos/01-first-hug.jpg" alt="Our first hug" style="width:100%;height:100%;object-fit:cover;border-radius:16px;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                        <div class="placeholder-box" style="display:none;">
+                            <span class="placeholder-icon">🤗</span>
+                            <p>First hug</p>
+                            <small>photos/01-first-hug.jpg</small>
+                        </div>
+                    </div>
+                    <div class="gallery-caption"><h4>Our first hug</h4><p>The moment everything felt real.</p></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <img src="photos/02-first-photo.jpg" alt="Our first photo" style="width:100%;height:100%;object-fit:cover;border-radius:16px;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                        <div class="placeholder-box" style="display:none;"><span>📸</span><p>First photo</p></div>
+                    </div>
+                    <div class="gallery-caption"><h4>Our first photo</h4><p>The beginning of us on camera.</p></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <img src="photos/03-first-date.jpg" alt="Our first date" style="width:100%;height:100%;object-fit:cover;border-radius:16px;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                        <div class="placeholder-box" style="display:none;"><span>🎬</span><p>First date</p></div>
+                    </div>
+                    <div class="gallery-caption"><h4>First date</h4><p>Worth every bunked class.</p></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <img src="photos/04-another-date.jpg" alt="Another date" style="width:100%;height:100%;object-fit:cover;border-radius:16px;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                        <div class="placeholder-box" style="display:none;"><span>💛</span><p>Another date</p></div>
+                    </div>
+                    <div class="gallery-caption"><h4>Another beautiful day</h4><p>More memories with you.</p></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <img src="photos/05-another-date.jpg" alt="Another date together" style="width:100%;height:100%;object-fit:cover;border-radius:16px;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                        <div class="placeholder-box" style="display:none;"><span>🪞</span><p>Another date</p></div>
+                    </div>
+                    <div class="gallery-caption"><h4>Farewell & forever</h4><p>Looking good together.</p></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <img src="photos/06-exam-luck.jpg" alt="Wishing luck for exam" style="width:100%;height:100%;object-fit:cover;border-radius:16px;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                        <div class="placeholder-box" style="display:none;"><span>🌅</span><p>Exam morning</p></div>
+                    </div>
+                    <div class="gallery-caption"><h4>6 AM good luck</h4><p>I came to wish you the best.</p></div>
+                </div>
+                <div class="gallery-item wide">
+                    <div class="gallery-placeholder">
+                        <img src="photos/07-dreamed-of.jpg" alt="Everything I always dreamed of" style="width:100%;height:100%;object-fit:cover;border-radius:16px;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                        <div class="placeholder-box" style="display:none;">
+                            <span>💑</span>
+                            <p>Everything I dreamed of</p>
+                        </div>
+                    </div>
+                    <div class="gallery-caption"><h4>Everything I always dreamed of</h4><p>You. Just you.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MINI GAMES -->
+    <section id="games" class="games-section section">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Play With Me</h2>
+                <p class="section-subtitle">Little games made with love — just for you, Baby</p>
+            </div>
+            <div class="games-intro">
+                <p>Each game unlocks a secret love note. High scores are saved on this device.</p>
+                <div class="unlocked-notes" id="unlocked-notes">
+                    <h4>Unlocked love notes</h4>
+                    <ul id="notes-list"><li class="empty">Play a game to unlock your first note 💌</li></ul>
+                </div>
+            </div>
+            <div class="games-grid">
+                <div class="game-card" id="game-hearts">
+                    <div class="game-header">
+                        <h3>💖 Heart Catcher</h3>
+                        <p>Tap the falling hearts. Don’t miss too many!</p>
+                    </div>
+                    <div class="game-stats">
+                        <span>Score: <strong id="hearts-score">0</strong></span>
+                        <span>Lives: <strong id="hearts-lives">5</strong></span>
+                        <span>Best: <strong id="hearts-best">0</strong></span>
+                    </div>
+                    <div class="game-area" id="hearts-area">
+                        <button class="btn-primary game-start" data-game="hearts">Start Game</button>
+                    </div>
+                    <p class="game-hint">Works great with touch on your phone.</p>
+                </div>
+
+                <div class="game-card" id="game-memory">
+                    <div class="game-header">
+                        <h3>🃏 Memory of Us</h3>
+                        <p>Match the pairs. Find all the symbols of our love.</p>
+                    </div>
+                    <div class="game-stats">
+                        <span>Moves: <strong id="memory-moves">0</strong></span>
+                        <span>Pairs: <strong id="memory-pairs">0</strong>/8</span>
+                        <span>Best: <strong id="memory-best">—</strong></span>
+                    </div>
+                    <div class="game-area memory-board" id="memory-board">
+                        <button class="btn-primary game-start" data-game="memory">Start Game</button>
+                    </div>
+                </div>
+
+                <div class="game-card" id="game-tap">
+                    <div class="game-header">
+                        <h3>💗 Love Tap Race</h3>
+                        <p>Tap as fast as you can for 10 seconds!</p>
+                    </div>
+                    <div class="game-stats">
+                        <span>Taps: <strong id="tap-score">0</strong></span>
+                        <span>Time: <strong id="tap-time">10</strong>s</span>
+                        <span>Best: <strong id="tap-best">0</strong></span>
+                    </div>
+                    <div class="game-area" id="tap-area">
+                        <div class="tap-heart" id="tap-heart">❤️</div>
+                        <button class="btn-primary game-start" data-game="tap">Start Game</button>
+                    </div>
+                </div>
+
+                <div class="game-card" id="game-balloons">
+                    <div class="game-header">
+                        <h3>🎈 Wish Balloons</h3>
+                        <p>Pop the balloons to reveal birthday wishes for you.</p>
+                    </div>
+                    <div class="game-stats">
+                        <span>Popped: <strong id="balloon-score">0</strong>/12</span>
+                    </div>
+                    <div class="game-area balloons-area" id="balloons-area">
+                        <button class="btn-primary game-start" data-game="balloons">Release Balloons</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUIZ -->
+    <section id="quiz" class="quiz-section section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <h2 class="section-title">How Well Do You Know Us?</h2>
+                <p class="section-subtitle">A soft little quiz about love</p>
+            </div>
+            <div class="quiz-card" id="quiz-card">
+                <div id="quiz-intro">
+                    <p>Answer a few gentle questions. At the end you’ll unlock a special message.</p>
+                    <button class="btn-primary" id="quiz-start">Begin the Quiz 💕</button>
+                </div>
+                <div id="quiz-play" class="hidden">
+                    <div class="quiz-progress"><div class="quiz-progress-bar" id="quiz-progress-bar"></div></div>
+                    <p class="quiz-question" id="quiz-question"></p>
+                    <div class="quiz-options" id="quiz-options"></div>
+                    <p class="quiz-meta"><span id="quiz-current">1</span> / <span id="quiz-total">8</span></p>
+                </div>
+                <div id="quiz-result" class="hidden">
+                    <h3 id="quiz-result-title">Beautiful</h3>
+                    <p id="quiz-result-score"></p>
+                    <p id="quiz-result-message"></p>
+                    <button class="btn-secondary" id="quiz-retry">Play again</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section id="timeline" class="timeline-section section">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-number">06</span>
+                <h2 class="section-title">Our Story So Far</h2>
+                <p class="section-subtitle">Moments that already feel like forever</p>
+            </div>
+            <div class="timeline" id="timeline-list">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">A day we’ll always remember</span>
+                        <h4>Bunked college for a movie date</h4>
+                        <p>We skipped class and chose each other and a movie instead. Worth every second.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">Another adventure</span>
+                        <h4>Bunked college to go to CG</h4>
+                        <p>Another day we chose the world outside the classroom — together.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">Early hours</span>
+                        <h4>I came to meet you at 6 in the morning</h4>
+                        <p>The sun was barely up, but being there for you made perfect sense.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">Before the exam</span>
+                        <h4>I came to wish you best of luck</h4>
+                        <p>Just to see you and tell you I’ve got you. You’ve got this.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">Today</span>
+                        <h4>Your birthday</h4>
+                        <p>Another year of you. Still choosing you. Still in love with my Dumbo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROMISES -->
+    <section id="promises" class="promises-section section">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-number">07</span>
+                <h2 class="section-title">Promises I Make to You</h2>
+                <p class="section-subtitle">Not just for today — for every day that follows</p>
+            </div>
+            <div class="promises-list">
+                <div class="promise-item">
+                    <div class="promise-icon">♡</div>
+                    <div class="promise-content">
+                        <h3>I promise to choose you</h3>
+                        <p>Every morning, every hard day, every ordinary Tuesday. I will keep choosing us.</p>
+                    </div>
+                </div>
+                <div class="promise-item">
+                    <div class="promise-icon">♡</div>
+                    <div class="promise-content">
+                        <h3>I promise to listen</h3>
+                        <p>Not just to your words, but to the quiet things your heart says when the world is loud.</p>
+                    </div>
+                </div>
+                <div class="promise-item">
+                    <div class="promise-icon">♡</div>
+                    <div class="promise-content">
+                        <h3>I promise to grow with you</h3>
+                        <p>To keep learning how to love you better, to become the partner you deserve.</p>
+                    </div>
+                </div>
+                <div class="promise-item">
+                    <div class="promise-icon">♡</div>
+                    <div class="promise-content">
+                        <h3>I promise soft places</h3>
+                        <p>When life gets heavy, I will be the place you can rest without having to be strong.</p>
+                    </div>
+                </div>
+                <div class="promise-item">
+                    <div class="promise-icon">♡</div>
+                    <div class="promise-content">
+                        <h3>I promise adventure</h3>
+                        <p>New places, late-night drives, bunked classes, and the kind of love that still feels like discovery.</p>
+                    </div>
+                </div>
+                <div class="promise-item">
+                    <div class="promise-icon">♡</div>
+                    <div class="promise-content">
+                        <h3>I promise forever</h3>
+                        <p>Not as a dramatic word, but as a daily practice. One day at a time, for as many days as we are given.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WISH -->
+    <section class="wish-section section">
+        <div class="container">
+            <div class="wish-card">
+                <div class="wish-glow"></div>
+                <h2 class="wish-title">My Birthday Wish for You</h2>
+                <p class="wish-text">
+                    May this new year of your life be filled with soft mornings, unexpected joys,
+                    deep laughter, and the quiet certainty that you are deeply, completely loved.
+                    May your dreams grow wings. May your heart stay as beautiful as it is today.
+                    And may I be lucky enough to walk beside you through all of it, Baby.
+                </p>
+                <div class="wish-signature">With all the love I have — Evan</div>
+                <div class="daily-note-box">
+                    <h4>A love note for you right now</h4>
+                    <p id="daily-note">Loading a soft message...</p>
+                    <button class="btn-secondary" id="new-note-btn">Another note 💌</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINALE -->
+    <section id="finale" class="finale-section section">
+        <div class="container">
+            <div class="finale-content">
+                <p class="finale-eyebrow">Until the stars forget how to shine</p>
+                <h2 class="finale-title">I Love You, Baby</h2>
+                <p class="finale-text">
+                    Not because of what you do, or how you look, or the way you make me feel —
+                    though all of those are true. I love you because you are you. My Dumbo. My everything.
+                </p>
+                <p class="finale-text">
+                    Happy Birthday, Beepana. Thank you for being born. Thank you for staying.
+                    Thank you for making this life feel like the greatest gift.
+                </p>
+                <div class="finale-hearts" id="finale-hearts">
+                    <span>❤️</span>
+                </div>
+                <p class="finale-closing">Yours, always.</p>
+                <p class="finale-closing" style="margin-top:0.5rem;font-family:var(--font-display);font-size:1.8rem;color:var(--color-accent-rose);">Evan</p>
+                <div class="finale-image-placeholder">
+                    <div class="placeholder-box">
+                        <span>💌</span>
+                        <img src="photos/05-another-date.jpg" alt="Another date together" style="width:100%;height:100%;object-fit:cover;border-radius:16px;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p class="footer-text">Made with endless love for Beepana — my Dumbo, my Baby.</p>
+            <p class="footer-sub">From Evan. Forever.</p>
+            <div class="footer-hearts">♡ ♡ ♡</div>
+        </div>
+    </footer>
+
+    <audio id="background-music" loop>
+        <source src="dil-diyan-gallan.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="sr-only" aria-live="polite" id="aria-live-region"></div>
+    <script src="script.js"></script>
+</body>
+</html>
